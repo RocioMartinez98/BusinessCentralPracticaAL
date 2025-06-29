@@ -1,1 +1,0 @@
-TablaNoUso.al fue marcada como obsoleta (ObsoleteState = Removed) y está lista para ser eliminada del proyecto. Procedo a borrarla del directorio fuente.
