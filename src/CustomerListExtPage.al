@@ -15,6 +15,24 @@ pageextension 50108 CustomerListExt extends "Customer List"
                     Page.Run(Page::"EjercicioCheckPage");
                 end;
             }
+            action(OpenPersonaFormulario)
+            {
+                Caption = 'Agregar nueva persona';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Page.Run(Page::"PersonaFormulario");
+                end;
+            }
+            action(OpenPersonaListPage)
+            {
+                Caption = 'Ver lista de personas';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Page.Run(Page::PersonaListPage);
+                end;
+            }
         }
     }
 }

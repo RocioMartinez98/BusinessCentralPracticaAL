@@ -1,9 +1,12 @@
 page 50105 EjercicioCheckPage
 {
+    Caption = 'Página para probar AL';
     PageType = Card;
     ApplicationArea = All;
     //UsageCategory = Administration; // la pagina se puede buscar por la lupita
     UsageCategory = None; //la apagina no se puede buscar por la lupita
+
+
 
     layout
     {
@@ -11,6 +14,8 @@ page 50105 EjercicioCheckPage
         {
             group(PruebaCheck)
             {
+                Caption = 'Prueba Check y texto';
+
                 field(MyChecked; MyChecked)
                 {
                     ApplicationArea = All;
