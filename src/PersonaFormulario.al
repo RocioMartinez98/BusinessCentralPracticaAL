@@ -22,6 +22,7 @@ page 50110 PersonaFormulario
                 }
                 field(FechaNacimiento; Rec.FechaNacimiento)
                 {
+                    Caption = 'Fecha de Nacimiento';
                     ApplicationArea = All;
                 }
             }

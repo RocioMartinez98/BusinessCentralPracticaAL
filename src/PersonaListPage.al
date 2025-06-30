@@ -4,7 +4,9 @@ page 50111 PersonaListPage
     SourceTable = PersonaTable;
     ApplicationArea = All;
     Caption = 'Lista de Personas';
-    Editable = false;
+    InsertAllowed = false;   // bloquea "Nuevo"
+    ModifyAllowed = false;   // opcional: bloquea edición en línea
+
 
     layout
     {
