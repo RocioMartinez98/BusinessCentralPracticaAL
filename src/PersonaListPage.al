@@ -17,6 +17,7 @@ page 50111 PersonaListPage
                 field(Nombre; Rec.Nombre) { }
                 field(Apellido; Rec.Apellido) { }
                 field(FechaNacimiento; Rec.FechaNacimiento) { }
+                field(Id; Rec.Id) { }
             }
         }
     }

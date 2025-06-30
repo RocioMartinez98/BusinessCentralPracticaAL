@@ -8,8 +8,10 @@ page 50110 PersonaFormulario
 
     layout
     {
+
         area(content)
         {
+
             group(General)
             {
                 field(Nombre; Rec.Nombre)
@@ -29,8 +31,25 @@ page 50110 PersonaFormulario
         }
     }
 
-    /*procedure SetRecord(var persona: Record PersonaTable);
-    begin
-        Rec := persona;
-    end;*/
+    actions
+    {
+        area(processing)
+        {
+            action(GoToListaPersonas)
+            {
+                Caption = 'Ir a Lista de Personas';
+                Image = List;
+
+                trigger OnAction()
+                begin
+                    CurrPage.Close();
+                    PAGE.RUN(PAGE::"PersonaListPage");
+                end;
+            }
+        }
+    }
+
+
+
+
 }
