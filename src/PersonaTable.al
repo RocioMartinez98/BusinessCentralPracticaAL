@@ -35,7 +35,7 @@ table 50109 PersonaTable
         }
         field(8; EstadoCivil; Option)
         {
-            OptionMembers = Soltero, Casado, Viudo;
+            OptionMembers = Soltero,Casado,Viudo;
             DataClassification = ToBeClassified;
         }
     }
