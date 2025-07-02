@@ -28,6 +28,18 @@ page 50110 PersonaFormulario
                     ApplicationArea = All;
                 }
             }
+            group(RedesSociales)
+            {
+                Caption = 'Redes Sociales';
+                field(Linkedin; Rec.Linkedin) { }
+                field(Facebook; Rec.Facebook) { }
+                field(Instagram; Rec.Instagram) { }
+            }
+            group(EstadoCivilGroup)
+            {
+                Caption = 'Estado Civil';
+                field(EstadoCivil; Rec.EstadoCivil) { }
+            }
         }
     }
 
@@ -44,6 +56,15 @@ page 50110 PersonaFormulario
                 begin
                     CurrPage.Close();
                     PAGE.RUN(PAGE::"PersonaListPage");
+                end;
+            }
+            action(OpenRedesSocialesCard)
+            {
+                Caption = 'Agregar info de redes sociales';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    PAGE.Run(PAGE::PersonaFormulario, Rec);
                 end;
             }
         }

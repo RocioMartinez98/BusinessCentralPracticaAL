@@ -18,6 +18,10 @@ page 50111 PersonaListPage
                 field(Apellido; Rec.Apellido) { }
                 field(FechaNacimiento; Rec.FechaNacimiento) { }
                 field(Id; Rec.Id) { }
+                field(Linkedin; Rec.Linkedin) { }
+                field(Facebook; Rec.Facebook) { }
+                field(Instagram; Rec.Instagram) { }
+                field(EstadoCivil; Rec.EstadoCivil) { }
             }
         }
     }
