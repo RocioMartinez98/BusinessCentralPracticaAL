@@ -4,6 +4,7 @@ page 50112 PersonaExtraDatosCard
     SourceTable = PersonaTable;
     ApplicationArea = All;
     Caption = 'Datos Extra de Persona';
+    UsageCategory = Administration;
 
     layout
     {
@@ -23,4 +24,7 @@ page 50112 PersonaExtraDatosCard
             }
         }
     }
+
+
+
 }

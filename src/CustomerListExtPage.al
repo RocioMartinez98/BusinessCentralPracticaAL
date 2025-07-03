@@ -33,6 +33,15 @@ pageextension 50108 CustomerListExt extends "Customer List"
                     Page.Run(Page::PersonaListPage);
                 end;
             }
+            action(OpenRegistroFacturaPage)
+            {
+                Caption = 'Ver facturas registradas';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Page.Run(Page::RegistroFacturaPage);
+                end;
+            }
         }
     }
 }

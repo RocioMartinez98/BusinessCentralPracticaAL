@@ -49,9 +49,12 @@ page 50110 PersonaFormulario
             action(AgregarDatosExtra)
             {
                 Caption = 'Agregar datos extra';
+                Image = ChangeDates;
                 ApplicationArea = All;
                 trigger OnAction()
                 begin
+                    if (Rec.Nombre = '') or (Rec.Apellido = '') then
+                        Error('Debe completar Nombre y Apellido antes de agregar datos extra.');
                     PAGE.Run(PAGE::PersonaExtraDatosCard, Rec);
                 end;
             }
