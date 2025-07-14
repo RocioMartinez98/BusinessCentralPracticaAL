@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://bccontainer",
+            "server": "http://aprendebc",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 22,
